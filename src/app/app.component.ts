@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'angular10course';
+  public title = 'angular10course';
+  private money = 3000;
+
+  public getSalary = () => {
+    return this.money * 1.2;
+  }
 }
