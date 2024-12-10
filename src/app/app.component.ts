@@ -6,10 +6,16 @@ import {Component} from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  public title = 'angular10course';
-  private money = 3000;
+  public imgHeight = 150;
+  public imgSrc = 'https://raw.githubusercontent.com/igorbezsmertnyi/angular-2-rails-starterkit/master/src/logo.png';
 
-  public getSalary = () => {
-    return this.money * 1.2;
-  }
+  public clickHandler = (div: HTMLDivElement, event: MouseEvent) => {
+    console.log('clicked!', div);
+  };
+
+  public searchText = '';
+
+  public search = (value: string) => {
+    this.searchText = value;
+  };
 }

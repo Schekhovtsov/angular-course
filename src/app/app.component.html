@@ -1,3 +1,9 @@
 <app-example></app-example>
-<h1>{{ title }}</h1>
-<h4>{{ 'My salary is ' + getSalary() + '$' }}</h4>
+<img [src]="imgSrc"
+     [height]="imgHeight"
+/>
+<div #myRef>Div for ref</div>
+<button (click)="clickHandler(myRef, $event)">Button</button>
+
+<input #inputRef type="text" (input)="search(inputRef.value)"/>
+{{ searchText }}
