@@ -1,9 +1,7 @@
-<app-example></app-example>
-<img [src]="imgSrc"
-     [height]="imgHeight"
-/>
-<div #myRef>Div for ref</div>
-<button (click)="clickHandler(myRef, $event)">Button</button>
-
-<input #inputRef type="text" (input)="search(inputRef.value)"/>
-{{ searchText }}
+<app-header [title]="myTitle" [sideNav]="mySideNav"></app-header>
+<app-side-menu (setSideNavControl)="setSideNav($event)">
+  <div class="menu">
+    <div>Menu content</div>
+  </div>
+  <div>Main content</div>
+</app-side-menu>

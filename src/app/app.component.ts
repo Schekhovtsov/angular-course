@@ -1,4 +1,5 @@
-import {Component} from '@angular/core';
+import { Component } from '@angular/core';
+import { MatDrawer } from '@angular/material/sidenav';
 
 @Component({
   selector: 'app-root',
@@ -6,16 +7,10 @@ import {Component} from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  public imgHeight = 150;
-  public imgSrc = 'https://raw.githubusercontent.com/igorbezsmertnyi/angular-2-rails-starterkit/master/src/logo.png';
+  public myTitle = 'Ng course';
+  public mySideNav: MatDrawer;
 
-  public clickHandler = (div: HTMLDivElement, event: MouseEvent) => {
-    console.log('clicked!', div);
-  };
-
-  public searchText = '';
-
-  public search = (value: string) => {
-    this.searchText = value;
-  };
+  public setSideNav = (drawer: MatDrawer) => {
+    this.mySideNav = drawer;
+  }
 }
