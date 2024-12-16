@@ -1,7 +1,8 @@
 <app-header [title]="myTitle" [sideNav]="mySideNav"></app-header>
 <app-side-menu (setSideNavControl)="setSideNav($event)">
-  <div class="menu">
-    <div>Menu content</div>
-  </div>
-  <div>Main content</div>
+  <ng-template #contentTemplate>
+    <div>
+      main content
+    </div>
+  </ng-template>
 </app-side-menu>
