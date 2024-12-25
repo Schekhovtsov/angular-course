@@ -8,6 +8,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SharedModule } from './shared/shared.module';
 import { ShopCardComponent } from './shop-card/shop-card.component';
 import { FooterComponent } from './footer/footer.component';
+import { ProductCardComponent } from './product-card/product-card.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { FooterComponent } from './footer/footer.component';
     HeaderComponent,
     SideMenuComponent,
     ShopCardComponent,
-    FooterComponent
+    FooterComponent,
+    ProductCardComponent,
   ],
   imports: [
     BrowserModule,

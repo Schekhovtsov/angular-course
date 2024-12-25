@@ -13,6 +13,7 @@ export class AppComponent {
   public mySideNav: MatDrawer;
   public terminalMessage: string;
   public product: ICartProduct = cartProduct;
+  public cart = [];
 
   public setSideNav = (drawer: MatDrawer) => {
     this.mySideNav = drawer;
@@ -29,5 +30,10 @@ export class AppComponent {
       return;
     }
     this.product.count--;
+  }
+
+  public addToCartHandler = (product: ICartProduct) => {
+    this.terminalMessage = `Добавили в корзину ${product.name}`;
+    this.cart.push(product);
   }
 }

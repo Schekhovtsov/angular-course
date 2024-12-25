@@ -9,6 +9,10 @@
             (increment)="increment()"
             (decrement)="decrement()"
           ></app-shop-card>
+          <app-product-card
+            [product]="product"
+            (addToCart)="addToCartHandler(product)"
+          ></app-product-card>
         </div>
         <div class="terminal">
           <pre>{{ terminalMessage }}</pre>
