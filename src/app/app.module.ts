@@ -7,13 +7,15 @@ import { SideMenuComponent } from './side-menu/side-menu.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SharedModule } from './shared/shared.module';
 import { ShopCardComponent } from './shop-card/shop-card.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     SideMenuComponent,
-    ShopCardComponent
+    ShopCardComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
