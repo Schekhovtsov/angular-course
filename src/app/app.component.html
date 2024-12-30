@@ -13,6 +13,9 @@
             [product]="product"
             (addToCart)="addToCartHandler(product)"
           ></app-product-card>
+          <app-suggested-product-card
+            [product]="product"
+          ></app-suggested-product-card>
         </div>
         <div class="terminal">
           <pre>{{ terminalMessage }}</pre>

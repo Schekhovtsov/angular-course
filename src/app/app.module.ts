@@ -9,6 +9,7 @@ import { SharedModule } from './shared/shared.module';
 import { ShopCardComponent } from './shop-card/shop-card.component';
 import { FooterComponent } from './footer/footer.component';
 import { ProductCardComponent } from './product-card/product-card.component';
+import { SuggestedProductCardComponent } from './suggested-product-card/suggested-product-card.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { ProductCardComponent } from './product-card/product-card.component';
     ShopCardComponent,
     FooterComponent,
     ProductCardComponent,
+    SuggestedProductCardComponent
   ],
   imports: [
     BrowserModule,

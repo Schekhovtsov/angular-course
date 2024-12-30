@@ -2,7 +2,7 @@ import {
   Component,
   ChangeDetectionStrategy, Input, Output, EventEmitter,
 } from '@angular/core';
-import { IProduct } from '../../shared/mocks/interfaces';
+import { ICartProduct } from '../../shared/mocks/1-components/cart-product';
 
 @Component({
   selector: 'app-product-card',
@@ -10,11 +10,11 @@ import { IProduct } from '../../shared/mocks/interfaces';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ProductCardComponent {
-  @Input() public product: IProduct;
+  @Input() public product: ICartProduct;
 
   @Output() public addToCart = new EventEmitter();
 
-  public addToCartHandler = (product: IProduct) => {
+  public addToCartHandler = (product: ICartProduct) => {
     this.addToCart.emit(product);
   }
 }
