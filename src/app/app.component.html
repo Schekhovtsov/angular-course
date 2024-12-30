@@ -1,4 +1,4 @@
-<app-header [title]="myTitle" [sideNav]="mySideNav"></app-header>
+<app-header [title]="myTitle" [sideNav]="mySideNav" [qtyInCart]="cart.length"></app-header>
 <app-side-menu (setSideNavControl)="setSideNav($event)">
   <ng-template #contentTemplate>
     <div class="content" role="main">

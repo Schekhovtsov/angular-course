@@ -14,6 +14,8 @@ export class HeaderComponent implements OnInit {
   @Input()
   public sideNav: MatDrawer;
 
+  @Input() public qtyInCart: number;
+
   constructor() {
   }
 
